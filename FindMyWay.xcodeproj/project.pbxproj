@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA0352D21B5C64800346910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0352C21B5C64800346910 /* AppDelegate.swift */; };
+		9CA0352F21B5C64800346910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0352E21B5C64800346910 /* ViewController.swift */; };
+		9CA0353221B5C64800346910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0353021B5C64800346910 /* Main.storyboard */; };
+		9CA0353521B5C64900346910 /* FindMyWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0353321B5C64900346910 /* FindMyWay.xcdatamodeld */; };
+		9CA0353721B5C64B00346910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0353621B5C64B00346910 /* Assets.xcassets */; };
+		9CA0353A21B5C64B00346910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0353821B5C64B00346910 /* LaunchScreen.storyboard */; };
+		9CA0354521B5C64B00346910 /* FindMyWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0354421B5C64B00346910 /* FindMyWayTests.swift */; };
+		9CA0355021B5C64B00346910 /* FindMyWayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0354F21B5C64B00346910 /* FindMyWayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CA0354121B5C64B00346910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA0352121B5C64800346910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA0352821B5C64800346910;
+			remoteInfo = FindMyWay;
+		};
+		9CA0354C21B5C64B00346910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA0352121B5C64800346910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA0352821B5C64800346910;
+			remoteInfo = FindMyWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CA0352921B5C64800346910 /* FindMyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA0352C21B5C64800346910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CA0352E21B5C64800346910 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CA0353121B5C64800346910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CA0353421B5C64900346910 /* FindMyWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindMyWay.xcdatamodel; sourceTree = "<group>"; };
+		9CA0353621B5C64B00346910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA0353921B5C64B00346910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CA0353B21B5C64B00346910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA0354021B5C64B00346910 /* FindMyWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA0354421B5C64B00346910 /* FindMyWayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyWayTests.swift; sourceTree = "<group>"; };
+		9CA0354621B5C64B00346910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA0354B21B5C64B00346910 /* FindMyWayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyWayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA0354F21B5C64B00346910 /* FindMyWayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyWayUITests.swift; sourceTree = "<group>"; };
+		9CA0355121B5C64B00346910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA0352621B5C64800346910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0353D21B5C64B00346910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0354821B5C64B00346910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA0352021B5C64800346910 = {
+			isa = PBXGroup;
+			children = (
+				9CA0352B21B5C64800346910 /* FindMyWay */,
+				9CA0354321B5C64B00346910 /* FindMyWayTests */,
+				9CA0354E21B5C64B00346910 /* FindMyWayUITests */,
+				9CA0352A21B5C64800346910 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA0352A21B5C64800346910 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0352921B5C64800346910 /* FindMyWay.app */,
+				9CA0354021B5C64B00346910 /* FindMyWayTests.xctest */,
+				9CA0354B21B5C64B00346910 /* FindMyWayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA0352B21B5C64800346910 /* FindMyWay */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0352C21B5C64800346910 /* AppDelegate.swift */,
+				9CA0352E21B5C64800346910 /* ViewController.swift */,
+				9CA0353021B5C64800346910 /* Main.storyboard */,
+				9CA0353621B5C64B00346910 /* Assets.xcassets */,
+				9CA0353821B5C64B00346910 /* LaunchScreen.storyboard */,
+				9CA0353B21B5C64B00346910 /* Info.plist */,
+				9CA0353321B5C64900346910 /* FindMyWay.xcdatamodeld */,
+			);
+			path = FindMyWay;
+			sourceTree = "<group>";
+		};
+		9CA0354321B5C64B00346910 /* FindMyWayTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0354421B5C64B00346910 /* FindMyWayTests.swift */,
+				9CA0354621B5C64B00346910 /* Info.plist */,
+			);
+			path = FindMyWayTests;
+			sourceTree = "<group>";
+		};
+		9CA0354E21B5C64B00346910 /* FindMyWayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0354F21B5C64B00346910 /* FindMyWayUITests.swift */,
+				9CA0355121B5C64B00346910 /* Info.plist */,
+			);
+			path = FindMyWayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA0352821B5C64800346910 /* FindMyWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA0355421B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWay" */;
+			buildPhases = (
+				9CA0352521B5C64800346910 /* Sources */,
+				9CA0352621B5C64800346910 /* Frameworks */,
+				9CA0352721B5C64800346910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyWay;
+			productName = FindMyWay;
+			productReference = 9CA0352921B5C64800346910 /* FindMyWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CA0353F21B5C64B00346910 /* FindMyWayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA0355721B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWayTests" */;
+			buildPhases = (
+				9CA0353C21B5C64B00346910 /* Sources */,
+				9CA0353D21B5C64B00346910 /* Frameworks */,
+				9CA0353E21B5C64B00346910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA0354221B5C64B00346910 /* PBXTargetDependency */,
+			);
+			name = FindMyWayTests;
+			productName = FindMyWayTests;
+			productReference = 9CA0354021B5C64B00346910 /* FindMyWayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CA0354A21B5C64B00346910 /* FindMyWayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA0355A21B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWayUITests" */;
+			buildPhases = (
+				9CA0354721B5C64B00346910 /* Sources */,
+				9CA0354821B5C64B00346910 /* Frameworks */,
+				9CA0354921B5C64B00346910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA0354D21B5C64B00346910 /* PBXTargetDependency */,
+			);
+			name = FindMyWayUITests;
+			productName = FindMyWayUITests;
+			productReference = 9CA0354B21B5C64B00346910 /* FindMyWayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA0352121B5C64800346910 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Insik Cho";
+				TargetAttributes = {
+					9CA0352821B5C64800346910 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9CA0353F21B5C64B00346910 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9CA0352821B5C64800346910;
+					};
+					9CA0354A21B5C64B00346910 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9CA0352821B5C64800346910;
+					};
+				};
+			};
+			buildConfigurationList = 9CA0352421B5C64800346910 /* Build configuration list for PBXProject "FindMyWay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CA0352021B5C64800346910;
+			productRefGroup = 9CA0352A21B5C64800346910 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA0352821B5C64800346910 /* FindMyWay */,
+				9CA0353F21B5C64B00346910 /* FindMyWayTests */,
+				9CA0354A21B5C64B00346910 /* FindMyWayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA0352721B5C64800346910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0353A21B5C64B00346910 /* LaunchScreen.storyboard in Resources */,
+				9CA0353721B5C64B00346910 /* Assets.xcassets in Resources */,
+				9CA0353221B5C64800346910 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0353E21B5C64B00346910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0354921B5C64B00346910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA0352521B5C64800346910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0352F21B5C64800346910 /* ViewController.swift in Sources */,
+				9CA0353521B5C64900346910 /* FindMyWay.xcdatamodeld in Sources */,
+				9CA0352D21B5C64800346910 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0353C21B5C64B00346910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0354521B5C64B00346910 /* FindMyWayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0354721B5C64B00346910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0355021B5C64B00346910 /* FindMyWayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CA0354221B5C64B00346910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA0352821B5C64800346910 /* FindMyWay */;
+			targetProxy = 9CA0354121B5C64B00346910 /* PBXContainerItemProxy */;
+		};
+		9CA0354D21B5C64B00346910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA0352821B5C64800346910 /* FindMyWay */;
+			targetProxy = 9CA0354C21B5C64B00346910 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CA0353021B5C64800346910 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA0353121B5C64800346910 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CA0353821B5C64B00346910 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA0353921B5C64B00346910 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CA0355221B5C64B00346910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CA0355321B5C64B00346910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA0355521B5C64B00346910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KR9476VH6;
+				INFOPLIST_FILE = FindMyWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alaskaair.FindMyWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CA0355621B5C64B00346910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KR9476VH6;
+				INFOPLIST_FILE = FindMyWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alaskaair.FindMyWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CA0355821B5C64B00346910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KR9476VH6;
+				INFOPLIST_FILE = FindMyWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alaskaair.FindMyWayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyWay.app/FindMyWay";
+			};
+			name = Debug;
+		};
+		9CA0355921B5C64B00346910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KR9476VH6;
+				INFOPLIST_FILE = FindMyWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alaskaair.FindMyWayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyWay.app/FindMyWay";
+			};
+			name = Release;
+		};
+		9CA0355B21B5C64B00346910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KR9476VH6;
+				INFOPLIST_FILE = FindMyWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alaskaair.FindMyWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyWay;
+			};
+			name = Debug;
+		};
+		9CA0355C21B5C64B00346910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KR9476VH6;
+				INFOPLIST_FILE = FindMyWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alaskaair.FindMyWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyWay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA0352421B5C64800346910 /* Build configuration list for PBXProject "FindMyWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA0355221B5C64B00346910 /* Debug */,
+				9CA0355321B5C64B00346910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA0355421B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA0355521B5C64B00346910 /* Debug */,
+				9CA0355621B5C64B00346910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA0355721B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA0355821B5C64B00346910 /* Debug */,
+				9CA0355921B5C64B00346910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA0355A21B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA0355B21B5C64B00346910 /* Debug */,
+				9CA0355C21B5C64B00346910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CA0353321B5C64900346910 /* FindMyWay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CA0353421B5C64900346910 /* FindMyWay.xcdatamodel */,
+			);
+			currentVersion = 9CA0353421B5C64900346910 /* FindMyWay.xcdatamodel */;
+			path = FindMyWay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9CA0352121B5C64800346910 /* Project object */;
+}
