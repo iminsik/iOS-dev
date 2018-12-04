@@ -11,20 +11,19 @@ import UIKit
 class FindTicketController: UIViewController {
     @IBOutlet weak var ticketTextView: UITextField!
     @IBOutlet weak var submitButton: UIButton!
+    
     var submitButtonColor: UIColor!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.submitButtonColor = submitButton.backgroundColor
+        submitButtonColor = submitButton.backgroundColor
         if ticketTextView.text == "" {
             submitButton.backgroundColor = UIColor.red
             submitButton.isEnabled = false
         } else {
-            submitButton.backgroundColor = self.submitButtonColor
             submitButton.isEnabled = true
         }
-
     }
     
     @IBAction func SubmitTicket(_ sender: Any) {
@@ -36,7 +35,7 @@ class FindTicketController: UIViewController {
             submitButton.backgroundColor = UIColor.red
             submitButton.isEnabled = false
         } else {
-            submitButton.backgroundColor = self.submitButtonColor
+            submitButton.backgroundColor = submitButtonColor
             submitButton.isEnabled = true
         }
     }
