@@ -36,7 +36,7 @@ class FindTicketController: UIViewController {
         if ticketTextView.text == "" {
             submitButton.backgroundColor = UIColor.red
             submitButton.isEnabled = false
-        } else if IsValidTicketNumber(ticketTextView.text) {
+        } else if FindTicketController.IsValidTicketNumber(ticketTextView.text) {
             submitButton.backgroundColor = submitButtonColor
             submitButton.isEnabled = true
             ticketValidationMsg.text = ""
@@ -48,7 +48,7 @@ class FindTicketController: UIViewController {
         }
     }
     
-    func IsUppercasedAlphabet(_ character: Character) -> Bool {
+    static func IsUppercasedAlphabet(_ character: Character) -> Bool {
         switch character {
             case "A"..."Z":
                 return true
@@ -57,7 +57,7 @@ class FindTicketController: UIViewController {
         }
     }
     
-    func IsValidTicketNumber(_ ticketNumber: String?) -> Bool {
+    static func IsValidTicketNumber(_ ticketNumber: String?) -> Bool {
         var isValidTicketNumber = false
         if ticketNumber?.count == 6 {
             for character in ticketNumber! {
