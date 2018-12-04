@@ -29,6 +29,8 @@ class FindTicketController: UIViewController {
     }
     
     @IBAction func SubmitTicket(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(ticketTextView.text, forKey: "PNR")
     }
     
     
