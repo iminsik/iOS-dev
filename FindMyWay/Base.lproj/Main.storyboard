@@ -18,22 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your ticket #" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-xd-5nf">
-                                <rect key="frame" x="47" y="63" width="281" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                <connections>
-                                    <action selector="TicketChangedRecently:" destination="BYZ-38-t0r" eventType="editingChanged" id="QXV-e5-N5M"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlaskaAirlines_Wordmark_Official_4cp_Lg" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-mL-XMb">
-                                <rect key="frame" x="47" y="236" width="281" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS5-00-WhT">
-                                <rect key="frame" x="47" y="148" width="281" height="47"/>
+                                <rect key="frame" x="47" y="128" width="281" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14048767609081211" green="0.30432847546878722" blue="0.58470288212435229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Find">
@@ -44,18 +30,41 @@
                                     <segue destination="jZR-mo-UnG" kind="show" id="yGo-GL-ngk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Ticket #" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-lm-YtU">
+                                <rect key="frame" x="47" y="79" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" smartInsertDeleteType="no"/>
+                                <connections>
+                                    <action selector="TicketChangedRecently:" destination="BYZ-38-t0r" eventType="editingChanged" id="gsW-O2-djx"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4O2-Rp-bQe">
+                                <rect key="frame" x="47" y="192" width="281" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21234650429999999" green="0.4529809393" blue="0.76052461140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.6089094883419689" green="0.1889078423623502" blue="0.15411033462314208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlaskaAirlines_Wordmark_Official_4cp_Lg" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-mL-XMb">
+                                <rect key="frame" x="47" y="583" width="281" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.21234650430678459" green="0.45298093933982453" blue="0.76052461139896377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="submitButton" destination="bS5-00-WhT" id="mnI-rq-qMF"/>
-                        <outlet property="ticketTextView" destination="iUB-xd-5nf" id="Shv-aQ-BH3"/>
+                        <outlet property="ticketTextView" destination="jJA-lm-YtU" id="e0B-hD-iIX"/>
+                        <outlet property="ticketValidationMsg" destination="4O2-Rp-bQe" id="bsq-GV-rAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="26.785714285714285"/>
+            <point key="canvasLocation" x="52" y="26.600985221674879"/>
         </scene>
         <!--View Ticket Controller-->
         <scene sceneID="yXi-29-iZb">

@@ -11,8 +11,10 @@ import UIKit
 class FindTicketController: UIViewController {
     @IBOutlet weak var ticketTextView: UITextField!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var ticketValidationMsg: UITextView!
     
     var submitButtonColor: UIColor!
+    var warningTicketNumberFormat = "Ticket # must be 6 Alphabets."
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +36,36 @@ class FindTicketController: UIViewController {
         if ticketTextView.text == "" {
             submitButton.backgroundColor = UIColor.red
             submitButton.isEnabled = false
-        } else {
+        } else if IsValidTicketNumber(ticketTextView.text) {
             submitButton.backgroundColor = submitButtonColor
             submitButton.isEnabled = true
+            ticketValidationMsg.text = ""
         }
+        else {
+            submitButton.backgroundColor = UIColor.red
+            submitButton.isEnabled = false
+            ticketValidationMsg.text = warningTicketNumberFormat
+        }
+    }
+    
+    func IsUppercasedAlphabet(_ character: Character) -> Bool {
+        switch character {
+            case "A"..."Z":
+                return true
+            default:
+                return false
+        }
+    }
+    
+    func IsValidTicketNumber(_ ticketNumber: String?) -> Bool {
+        var isValidTicketNumber = false
+        if ticketNumber?.count == 6 {
+            for character in ticketNumber! {
+                isValidTicketNumber = IsUppercasedAlphabet(character)
+            }
+        }
+        
+        return isValidTicketNumber
     }
 }
 
