@@ -32,7 +32,7 @@ class ViewTicketController: UIViewController {
     
     fileprivate func printToView(_ sortedFlights: [Flight]) {
         for flight in sortedFlights {
-            self.TextViewPNR.text += NSDate(timeIntervalSince1970: TimeInterval(flight.departureTime!)).description + " "
+            self.TextViewPNR.text += NSDate(timeIntervalSince1970: TimeInterval(flight.departureTime!)).description.replacingOccurrences(of: "+0000", with: "") + " "
             self.TextViewPNR.text += flight.origin! + flight.destination! + " " + flight.aircrafttype! + "/" + flight.ident! + "\n"
         }
     }
@@ -50,7 +50,7 @@ class ViewTicketController: UIViewController {
         let flightAwareSvc = FlightAwareService(self.username, self.password);
         
         //https://learnappmaking.com/promises-swift-how-to/
-        _ = flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow("KSEA", "KLAX", 10).then {
+        _ = flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow("KSEA", "KLAX", 30).then {
             (args) -> Promise<Void> in
             let (json, response) = args
             var root : Root?
