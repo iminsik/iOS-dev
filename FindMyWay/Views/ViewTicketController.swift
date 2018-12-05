@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SwiftyJSON
+import PromiseKit
 
 class ViewTicketController: UIViewController {
     @IBOutlet weak var TextViewPNR: UITextView!
@@ -20,10 +21,14 @@ class ViewTicketController: UIViewController {
         let defaults = UserDefaults.standard
         let textPNR = defaults.string(forKey: "PNR")
         
-        FlightAwareService().GetAirport(pnr: textPNR!){ (result) in
-            self.TextViewPNR.text = result["origin"].stringValue
+        let flightAwareSvc = FlightAwareService();
+        
+        //https://learnappmaking.com/promises-swift-how-to/
+        _ = flightAwareSvc.GetAirport(pnr: textPNR!).then { (args) -> Promise<Void> in
+            let (json, _) = args
+            self.TextViewPNR.text = JSON(json).rawString()
+            return Promise()
         }
-        //TextViewPNR.text = textPNR
     }
     
     
