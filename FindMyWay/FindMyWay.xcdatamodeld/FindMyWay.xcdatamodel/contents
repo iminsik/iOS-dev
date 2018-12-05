@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Airport" representedClassName="Airport" syncable="YES" codeGenerationType="class">
-        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="googleCoords" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="long" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="FlightInfoEntity">
+    <entity name="FlightInfoEntity" representedClassName="FlightInfoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="cancelled" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="flightNumber" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Airport" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="FlightInfoEntity" positionX="-63" positionY="-18" width="128" height="75"/>
     </elements>
 </model>

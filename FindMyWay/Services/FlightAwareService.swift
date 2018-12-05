@@ -25,8 +25,8 @@ class FlightAwareService {
         return Alamofire.request("https://httpbin.org/get").responseJSON()
     }
     
-    func GetFlightInfoStatus() -> Promise<(json: Any, response: PMKAlamofireDataResponse)> {
-        return Alamofire.request(FlightAwareService._baseURL + "/FlightInfoStatus?ident=ASA1388&include_ex_data=true")
+    func GetFlightInfoStatus(ident: String) -> Promise<(json: Any, response: PMKAlamofireDataResponse)> {
+        return Alamofire.request(FlightAwareService._baseURL + "/FlightInfoStatus?ident=\(ident)&include_ex_data=true&&howMany=30")
             .authenticate(user: self.username, password: self.password)
             .responseJSON()
     }
