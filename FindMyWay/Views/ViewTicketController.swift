@@ -30,9 +30,18 @@ class ViewTicketController: UIViewController {
         //https://learnappmaking.com/promises-swift-how-to/
         _ = flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow(howMany: 5).then {
             (args) -> Promise<Void> in
-            let (json, _) = args
+            let (json, response) = args
             self.TextViewPNR.text = JSON(json).rawString()!
-            print(self.TextViewPNR.text)
+            
+            do {
+                let decoder = JSONDecoder()
+                let root = try decoder.decode(Root.self, from: response.data!)
+                print(root.airlineFlightSchedulesResult!.flights[0])
+            } catch let err {
+                print("Err", err)
+            }
+            
+            //print(self.TextViewPNR.text)
             return Promise()
         }.catch { (err) -> Void in
             self.TextViewPNR.text = err.localizedDescription

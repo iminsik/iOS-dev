@@ -8,10 +8,18 @@
 
 import Foundation
 
+struct Root: Codable {
+    let airlineFlightSchedulesResult: AirlineFlightSchedules?
+    
+    private enum CodingKeys: String, CodingKey {
+        case airlineFlightSchedulesResult = "AirlineFlightSchedulesResult"
+    }
+}
+
 struct AirlineFlightSchedules: Codable {
     
     let nextOffset: Int?
-    let flights: Array<Flight>?
+    let flights: [Flight]
     
     private enum CodingKeys: String, CodingKey {
         case nextOffset = "next_offset"
