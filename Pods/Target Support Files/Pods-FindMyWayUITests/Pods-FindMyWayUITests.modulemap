@@ -1,0 +1,6 @@
+framework module Pods_FindMyWayUITests {
+  umbrella header "Pods-FindMyWayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

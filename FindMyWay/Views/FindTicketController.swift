@@ -33,7 +33,6 @@ class FindTicketController: UIViewController {
         defaults.set(ticketTextView.text, forKey: "PNR")
     }
     
-    
     @IBAction func TicketChangedRecently(_ sender: Any) {
         if ticketTextView.text == "" {
             submitButton.backgroundColor = UIColor.red

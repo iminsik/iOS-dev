@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6018E70E2FB8DBD459C75D08 /* Pods_FindMyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5F6CF28E95BE92F510ACD6 /* Pods_FindMyWay.framework */; };
 		9C40212421B636FF00ED315D /* UITextFieldWithValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40212321B636FF00ED315D /* UITextFieldWithValidation.swift */; };
 		9C578CFB21B5F8240081A91E /* ViewTicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C578CFA21B5F8240081A91E /* ViewTicketController.swift */; };
 		9CA0352D21B5C64800346910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0352C21B5C64800346910 /* AppDelegate.swift */; };
@@ -17,7 +18,10 @@
 		9CA0353A21B5C64B00346910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0353821B5C64B00346910 /* LaunchScreen.storyboard */; };
 		9CA0354521B5C64B00346910 /* FindMyWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0354421B5C64B00346910 /* FindMyWayTests.swift */; };
 		9CA0355021B5C64B00346910 /* FindMyWayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0354F21B5C64B00346910 /* FindMyWayUITests.swift */; };
+		9CBD667721B732AB003497D1 /* FlightAwareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD667621B732AB003497D1 /* FlightAwareService.swift */; };
 		9CD015AB21B5D0340095B54F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD015AA21B5D0340095B54F /* MapKit.framework */; };
+		CDEDE8364DDB826955137473 /* Pods_FindMyWayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0292F4E85AD2ED87B01303 /* Pods_FindMyWayTests.framework */; };
+		F192B9CC5477006388A6176F /* Pods_FindMyWayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19168D9612C1986A94BAED8E /* Pods_FindMyWayUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19168D9612C1986A94BAED8E /* Pods_FindMyWayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyWayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E5F6CF28E95BE92F510ACD6 /* Pods_FindMyWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF7B5A7CC359DB55737E5D5 /* Pods-FindMyWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWay/Pods-FindMyWay.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0292F4E85AD2ED87B01303 /* Pods_FindMyWayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyWayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		756988DE165FFF938F40A357 /* Pods-FindMyWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWay.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWay/Pods-FindMyWay.release.xcconfig"; sourceTree = "<group>"; };
 		9C40212321B636FF00ED315D /* UITextFieldWithValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithValidation.swift; sourceTree = "<group>"; };
 		9C578CFA21B5F8240081A91E /* ViewTicketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTicketController.swift; sourceTree = "<group>"; };
 		9CA0352921B5C64800346910 /* FindMyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +63,13 @@
 		9CA0354B21B5C64B00346910 /* FindMyWayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyWayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA0354F21B5C64B00346910 /* FindMyWayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyWayUITests.swift; sourceTree = "<group>"; };
 		9CA0355121B5C64B00346910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CBD667621B732AB003497D1 /* FlightAwareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAwareService.swift; sourceTree = "<group>"; };
 		9CD015A821B5CF550095B54F /* FindMyWay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindMyWay.entitlements; sourceTree = "<group>"; };
 		9CD015AA21B5D0340095B54F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA76754F54A5EB997F336B3B /* Pods-FindMyWayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWayUITests/Pods-FindMyWayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9B2A3E8391DEBA3A18BA8F3 /* Pods-FindMyWayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWayUITests/Pods-FindMyWayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6085647301B196C63314FBC /* Pods-FindMyWayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWayTests/Pods-FindMyWayTests.release.xcconfig"; sourceTree = "<group>"; };
+		F374C6451475AB2410E0CC23 /* Pods-FindMyWayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWayTests/Pods-FindMyWayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CD015AB21B5D0340095B54F /* MapKit.framework in Frameworks */,
+				6018E70E2FB8DBD459C75D08 /* Pods_FindMyWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEDE8364DDB826955137473 /* Pods_FindMyWayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F192B9CC5477006388A6176F /* Pods_FindMyWayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +126,7 @@
 				9CA0354E21B5C64B00346910 /* FindMyWayUITests */,
 				9CA0352A21B5C64800346910 /* Products */,
 				9CD015A921B5D0340095B54F /* Frameworks */,
+				F3379BD8D17E9AB2A9B6C14E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +143,7 @@
 		9CA0352B21B5C64800346910 /* FindMyWay */ = {
 			isa = PBXGroup;
 			children = (
+				9CBD667821B733D1003497D1 /* Services */,
 				9C40212221B636E200ED315D /* Modules */,
 				9C578CF921B5F7C30081A91E /* Views */,
 				9CD015A821B5CF550095B54F /* FindMyWay.entitlements */,
@@ -156,12 +175,36 @@
 			path = FindMyWayUITests;
 			sourceTree = "<group>";
 		};
+		9CBD667821B733D1003497D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9CBD667621B732AB003497D1 /* FlightAwareService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9CD015A921B5D0340095B54F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9CD015AA21B5D0340095B54F /* MapKit.framework */,
+				3E5F6CF28E95BE92F510ACD6 /* Pods_FindMyWay.framework */,
+				6A0292F4E85AD2ED87B01303 /* Pods_FindMyWayTests.framework */,
+				19168D9612C1986A94BAED8E /* Pods_FindMyWayUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3379BD8D17E9AB2A9B6C14E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF7B5A7CC359DB55737E5D5 /* Pods-FindMyWay.debug.xcconfig */,
+				756988DE165FFF938F40A357 /* Pods-FindMyWay.release.xcconfig */,
+				F374C6451475AB2410E0CC23 /* Pods-FindMyWayTests.debug.xcconfig */,
+				D6085647301B196C63314FBC /* Pods-FindMyWayTests.release.xcconfig */,
+				BA76754F54A5EB997F336B3B /* Pods-FindMyWayUITests.debug.xcconfig */,
+				C9B2A3E8391DEBA3A18BA8F3 /* Pods-FindMyWayUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA0355421B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWay" */;
 			buildPhases = (
+				9E2885CF43F1A1010C9BDFB1 /* [CP] Check Pods Manifest.lock */,
 				9CA0352521B5C64800346910 /* Sources */,
 				9CA0352621B5C64800346910 /* Frameworks */,
 				9CA0352721B5C64800346910 /* Resources */,
+				0E4018B48652F4441998745D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA0355721B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWayTests" */;
 			buildPhases = (
+				E9C60FCBA2E3E9D283FC8D9B /* [CP] Check Pods Manifest.lock */,
 				9CA0353C21B5C64B00346910 /* Sources */,
 				9CA0353D21B5C64B00346910 /* Frameworks */,
 				9CA0353E21B5C64B00346910 /* Resources */,
@@ -206,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA0355A21B5C64B00346910 /* Build configuration list for PBXNativeTarget "FindMyWayUITests" */;
 			buildPhases = (
+				A42F7B65BA23CE757426F21E /* [CP] Check Pods Manifest.lock */,
 				9CA0354721B5C64B00346910 /* Sources */,
 				9CA0354821B5C64B00346910 /* Frameworks */,
 				9CA0354921B5C64B00346910 /* Resources */,
@@ -304,6 +351,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E4018B48652F4441998745D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FindMyWay/Pods-FindMyWay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyWay/Pods-FindMyWay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2885CF43F1A1010C9BDFB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyWay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A42F7B65BA23CE757426F21E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyWayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C60FCBA2E3E9D283FC8D9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyWayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CA0352521B5C64800346910 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,6 +453,7 @@
 			files = (
 				9C578CFB21B5F8240081A91E /* ViewTicketController.swift in Sources */,
 				9CA0352F21B5C64800346910 /* FindTicketController.swift in Sources */,
+				9CBD667721B732AB003497D1 /* FlightAwareService.swift in Sources */,
 				9CA0353521B5C64900346910 /* FindMyWay.xcdatamodeld in Sources */,
 				9C40212421B636FF00ED315D /* UITextFieldWithValidation.swift in Sources */,
 				9CA0352D21B5C64800346910 /* AppDelegate.swift in Sources */,
@@ -486,6 +629,7 @@
 		};
 		9CA0355521B5C64B00346910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF7B5A7CC359DB55737E5D5 /* Pods-FindMyWay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +648,7 @@
 		};
 		9CA0355621B5C64B00346910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756988DE165FFF938F40A357 /* Pods-FindMyWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +667,7 @@
 		};
 		9CA0355821B5C64B00346910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F374C6451475AB2410E0CC23 /* Pods-FindMyWayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +689,7 @@
 		};
 		9CA0355921B5C64B00346910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6085647301B196C63314FBC /* Pods-FindMyWayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +711,7 @@
 		};
 		9CA0355B21B5C64B00346910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA76754F54A5EB997F336B3B /* Pods-FindMyWayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +732,7 @@
 		};
 		9CA0355C21B5C64B00346910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B2A3E8391DEBA3A18BA8F3 /* Pods-FindMyWayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
