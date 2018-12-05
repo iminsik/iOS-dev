@@ -34,11 +34,7 @@ class FlightAwareService {
     func GetAirlineFlightSchedulesUntilTomorrow (
         _ origin: String?,
         _ destination: String?,
-//        _ airline: String?,
-//        _ flightNo: String?,
-//        _ exclude_codeshare: Bool?,
         _ howMany: Int?
-//        _ offset: Int?
     ) -> Promise<(json: Any, response: PMKAlamofireDataResponse)> {
         let now = NSDate().timeIntervalSince1970
         let theDayAfterTomorrow = Calendar.current.date(byAdding: .day, value: 2, to: Date())?.timeIntervalSince1970
