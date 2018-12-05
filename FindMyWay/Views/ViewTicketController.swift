@@ -32,8 +32,8 @@ class ViewTicketController: UIViewController {
     
     fileprivate func printToView(_ sortedFlights: [Flight]) {
         for flight in sortedFlights {
-            self.TextViewPNR.text += flight.origin! + flight.destination! + " " + flight.aircrafttype! + "\n"
-            self.TextViewPNR.text += "\t" + NSDate(timeIntervalSince1970: TimeInterval(flight.departureTime!)).description + "\n"
+            self.TextViewPNR.text += NSDate(timeIntervalSince1970: TimeInterval(flight.departureTime!)).description + " "
+            self.TextViewPNR.text += flight.origin! + flight.destination! + " " + flight.aircrafttype! + "/" + flight.ident! + "\n"
         }
     }
     
