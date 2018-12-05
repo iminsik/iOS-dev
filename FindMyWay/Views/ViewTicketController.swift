@@ -25,14 +25,14 @@ class ViewTicketController: UIViewController {
         //let defaults = UserDefaults.standard
         //let textPNR = defaults.string(forKey: "PNR")!
         
-        let flightAwareSvc = FlightAwareService();
+        let flightAwareSvc = FlightAwareService(self.username, self.password);
         
         //https://learnappmaking.com/promises-swift-how-to/
-        _ = flightAwareSvc.GetFlightInfoStatus(self.username, self.password).then {
+        _ = flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow(howMany: 5).then {
             (args) -> Promise<Void> in
             let (json, _) = args
             self.TextViewPNR.text = JSON(json).rawString()!
-            return Promise()
+            return PromiseS 
         }.catch { (err) -> Void in
             self.TextViewPNR.text = err.localizedDescription
         }
