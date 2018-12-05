@@ -42,7 +42,7 @@ class FlightAwareService {
     ) -> Promise<(json: Any, response: PMKAlamofireDataResponse)> {
         let now = NSDate().timeIntervalSince1970
         let theDayAfterTomorrow = Calendar.current.date(byAdding: .day, value: 2, to: Date())?.timeIntervalSince1970
-        return Alamofire.request(FlightAwareService._baseURL + "/AirlineFlightSchedules?start_date=" + String(format: "%d", NSInteger(now)) + "&end_date=" + String(format: "%d", NSInteger(theDayAfterTomorrow!)))
+        return Alamofire.request(FlightAwareService._baseURL + "/AirlineFlightSchedules?origin=KLAX&destination=KSEA&airline=ASA&start_date=" + String(format: "%d", NSInteger(now)) + "&end_date=" + String(format: "%d", NSInteger(theDayAfterTomorrow!)))
             .authenticate(user: self.username, password: self.password)
             .responseJSON()
     }

@@ -32,6 +32,7 @@ class ViewTicketController: UIViewController {
             (args) -> Promise<Void> in
             let (json, _) = args
             self.TextViewPNR.text = JSON(json).rawString()!
+            print(self.TextViewPNR.text)
             return Promise()
         }.catch { (err) -> Void in
             self.TextViewPNR.text = err.localizedDescription

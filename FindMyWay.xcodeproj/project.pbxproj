@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6018E70E2FB8DBD459C75D08 /* Pods_FindMyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5F6CF28E95BE92F510ACD6 /* Pods_FindMyWay.framework */; };
 		9C40212421B636FF00ED315D /* UITextFieldWithValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40212321B636FF00ED315D /* UITextFieldWithValidation.swift */; };
+		9C45690821B7B0ED00F7800C /* AirlineFlightSchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C45690721B7B0ED00F7800C /* AirlineFlightSchedules.swift */; };
 		9C578CFB21B5F8240081A91E /* ViewTicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C578CFA21B5F8240081A91E /* ViewTicketController.swift */; };
 		9CA0352D21B5C64800346910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0352C21B5C64800346910 /* AppDelegate.swift */; };
 		9CA0352F21B5C64800346910 /* FindTicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0352E21B5C64800346910 /* FindTicketController.swift */; };
@@ -48,6 +49,7 @@
 		6A0292F4E85AD2ED87B01303 /* Pods_FindMyWayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyWayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		756988DE165FFF938F40A357 /* Pods-FindMyWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyWay.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyWay/Pods-FindMyWay.release.xcconfig"; sourceTree = "<group>"; };
 		9C40212321B636FF00ED315D /* UITextFieldWithValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldWithValidation.swift; sourceTree = "<group>"; };
+		9C45690721B7B0ED00F7800C /* AirlineFlightSchedules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineFlightSchedules.swift; sourceTree = "<group>"; };
 		9C578CFA21B5F8240081A91E /* ViewTicketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTicketController.swift; sourceTree = "<group>"; };
 		9CA0352921B5C64800346910 /* FindMyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA0352C21B5C64800346910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		9C45690621B7B0AB00F7800C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C45690721B7B0ED00F7800C /* AirlineFlightSchedules.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9C578CF921B5F7C30081A91E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		9CA0352B21B5C64800346910 /* FindMyWay */ = {
 			isa = PBXGroup;
 			children = (
+				9C45690621B7B0AB00F7800C /* Models */,
 				9CBD667821B733D1003497D1 /* Services */,
 				9C40212221B636E200ED315D /* Modules */,
 				9C578CF921B5F7C30081A91E /* Views */,
@@ -455,6 +466,7 @@
 			files = (
 				9C578CFB21B5F8240081A91E /* ViewTicketController.swift in Sources */,
 				9CA0352F21B5C64800346910 /* FindTicketController.swift in Sources */,
+				9C45690821B7B0ED00F7800C /* AirlineFlightSchedules.swift in Sources */,
 				9CBD667721B732AB003497D1 /* FlightAwareService.swift in Sources */,
 				9CA0353521B5C64900346910 /* FindMyWay.xcdatamodeld in Sources */,
 				9C40212421B636FF00ED315D /* UITextFieldWithValidation.swift in Sources */,
