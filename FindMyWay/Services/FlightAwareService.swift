@@ -32,17 +32,18 @@ class FlightAwareService {
     }
     
     func GetAirlineFlightSchedulesUntilTomorrow (
-//        _ origin: String?,
-//        _ destination: String?,
+        _ origin: String?,
+        _ destination: String?,
 //        _ airline: String?,
 //        _ flightNo: String?,
 //        _ exclude_codeshare: Bool?,
-        howMany: Int?
+        _ howMany: Int?
 //        _ offset: Int?
     ) -> Promise<(json: Any, response: PMKAlamofireDataResponse)> {
         let now = NSDate().timeIntervalSince1970
         let theDayAfterTomorrow = Calendar.current.date(byAdding: .day, value: 2, to: Date())?.timeIntervalSince1970
-        return Alamofire.request(FlightAwareService._baseURL + "/AirlineFlightSchedules?origin=KLAX&destination=KSEA&airline=ASA&start_date=" + String(format: "%d", NSInteger(now)) + "&end_date=" + String(format: "%d", NSInteger(theDayAfterTomorrow!)))
+    let requestString = FlightAwareService._baseURL + "/AirlineFlightSchedules?origin=" + origin! + "&destination=" + destination! + "&howMany=" + String(howMany!) + "&airline=ASA&start_date=" + String(format: "%d", NSInteger(now)) + "&end_date=" + String(format: "%d", NSInteger(theDayAfterTomorrow!));
+        return Alamofire.request(requestString)
             .authenticate(user: self.username, password: self.password)
             .responseJSON()
     }

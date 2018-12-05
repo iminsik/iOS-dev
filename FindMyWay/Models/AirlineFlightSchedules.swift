@@ -8,6 +8,7 @@
 
 import Foundation
 
+//https://roadfiresoftware.com/2018/02/how-to-parse-json-with-swift-4/
 struct Root: Codable {
     let airlineFlightSchedulesResult: AirlineFlightSchedules?
     

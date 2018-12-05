@@ -19,6 +19,28 @@ class ViewTicketController: UIViewController {
     let username: String = "kimate"
     let password: String = "6ea9e24e929403785d2f2bd99684a76fda3aed14"
     
+    fileprivate func ConvertJsonToAirlineFlightSchedule(_ root: inout Root?, _ response: PMKAlamofireDataResponse) {
+        do {
+            let decoder = JSONDecoder()
+            root = try decoder.decode(Root.self, from: response.data!)
+            print(root!.airlineFlightSchedulesResult!.flights[0])
+            self.TextViewPNR.text = ""
+        } catch let err {
+            print("Err", err)
+        }
+    }
+    
+    fileprivate func printToView(_ sortedFlights: [Flight]) {
+        for flight in sortedFlights {
+            self.TextViewPNR.text += flight.origin! + flight.destination! + " " + flight.aircrafttype! + "\n"
+            self.TextViewPNR.text += "\t" + NSDate(timeIntervalSince1970: TimeInterval(flight.departureTime!)).description + "\n"
+        }
+    }
+    
+    fileprivate func sortFlightsByDepartureTimeInc(_ root: Root?) -> [Flight] {
+        return root!.airlineFlightSchedulesResult!.flights.sorted(by: { $0.departureTime! < $1.departureTime! })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,18 +50,15 @@ class ViewTicketController: UIViewController {
         let flightAwareSvc = FlightAwareService(self.username, self.password);
         
         //https://learnappmaking.com/promises-swift-how-to/
-        _ = flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow(howMany: 5).then {
+        _ = flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow("KSEA", "KLAX", 10).then {
             (args) -> Promise<Void> in
             let (json, response) = args
-            self.TextViewPNR.text = JSON(json).rawString()!
+            var root : Root?
             
-            do {
-                let decoder = JSONDecoder()
-                let root = try decoder.decode(Root.self, from: response.data!)
-                print(root.airlineFlightSchedulesResult!.flights[0])
-            } catch let err {
-                print("Err", err)
-            }
+            self.TextViewPNR.text = JSON(json).rawString()!
+            self.ConvertJsonToAirlineFlightSchedule(&root, response)
+            let sortedFlights = self.sortFlightsByDepartureTimeInc(root)
+            self.printToView(sortedFlights)
             
             //print(self.TextViewPNR.text)
             return Promise()
