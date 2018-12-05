@@ -29,8 +29,6 @@ class ViewTicketController: UIViewController {
         //let textPNR = UserDefaults.standard.string(forKey: "PNR")!
         
         let flightAwareSvc = FlightAwareService(self.username, self.password);
-        
-        //https://learnappmaking.com/promises-swift-how-to/
         flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow("KSEA", "KLAX", 30)
             .then(ParseAndShowFlights)
             .catch(ShowError)
