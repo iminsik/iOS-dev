@@ -26,7 +26,8 @@
   ```
 
 ## Check points
-- [ ] What is DEV, TEST and QA in Mobile App development
+- [x] We can have multiple story boards per device
+- [ ] What is DEV, TEST and QA in Mobile App development: manual deployment
 - [ ] How to create a custom module, e.g, CustomTableView, and associate the Storyboard item with the custom module.
 - [ ] Can we layout with percentage?
 - [ ] Understand the view controller life cycle and its callbacks and more https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/WorkWithViewControllers.html
