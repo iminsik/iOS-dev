@@ -55,3 +55,5 @@
 - View Controller is different View, which doesn't occupy a whole space, for example, "Table View Controller" vs "Table View"
 - Storyboard is a kinda project file
 - "IB" stands for "Interface Builder'. Therefore, variables with IBOutlet resolves 'nil', and with IBAction 'Void' respectively. but it let "Interface Builder" link UI elements to variables with the decorators.
+- 'protocol' and 'delegate' decorators are similar
+
