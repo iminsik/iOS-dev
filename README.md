@@ -3,13 +3,26 @@
 ## What's next?
 - [ ] Replace PromiseKit with AsyncTask in a feature branch
   ```swift
-    func testIsValidTicketNumber_WhenNotValid_ReturnsFalse() {
-        let ticketNumbers = ["ZXVCDZZ", "Z1c2fg", "11111", ";BBBBB"]
-        for ticketNumber in ticketNumbers {
-            let actual = FindTicketController.IsValidTicketNumber(ticketNumber)
-            XCTAssert(actual == false, String(format: ticketNumber + " should not be valid."))
+    // synchronous API
+    func encrypt(message: String) -> Task<String> {
+        return Task {
+            encrypt(message)
         }
     }
+    // asynchronous API
+    func get(URL: NSURL) -> Task<(NSData?, NSURLResponse?, NSError?)> {
+        return Task {completionHandler in
+            NSURLSession().dataTaskWithURL(URL, completionHandler: completionHandler).resume()
+        }
+    }
+    
+    // async
+    encrypt(message).async { ciphertext in /* do somthing */ }
+    get(URL).async {(data, response, error) in /* do somthing */ }
+
+    // await
+    let ciphertext = encrypt(message).await()
+    let (data, response, error) = get(URL).await()
   ```
 
 ## Check points
