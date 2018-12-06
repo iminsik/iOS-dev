@@ -18,13 +18,13 @@ class ViewTicketController: UIViewController {
     // Q: How can we secure username and password?
     let username: String = ""
     let password: String = ""
+    static var scheduler : Timer?
 
     fileprivate func ShowError(err: Error) -> Void {
         self.TextViewPNR.text = err.localizedDescription
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @objc func AddRandomFlightToEntity() {
         // Do any additional setup after loading the view, typically from a nib.
         //let textPNR = UserDefaults.standard.string(forKey: "PNR")!
         
@@ -34,6 +34,13 @@ class ViewTicketController: UIViewController {
             .catch(ShowError)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if ViewTicketController.scheduler == nil {
+            ViewTicketController.scheduler = Timer.scheduledTimer(timeInterval: 20.0, target: self, selector: #selector(self.AddRandomFlightToEntity), userInfo: nil, repeats: true)
+        }
+    }
+
     fileprivate func PrintFlightInfoStatus(json: Any, response: PMKAlamofireDataResponse) -> Promise<Void>
     {
         let flightInfo : FlightInfo? = ConvertJsonToFlightStatusInfo(response)
