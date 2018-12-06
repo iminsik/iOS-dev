@@ -27,6 +27,7 @@
 
 ## Check points
 - [ ] How to create a custom module, e.g, CustomTableView, and associate the Storyboard item with the custom module.
+- [ ] Can we layout with percentage?
 - [ ] Understand the view controller life cycle and its callbacks and more https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/WorkWithViewControllers.html
 - [x] CocoaPods: brew install cocoapods
 - [ ] UI Unit tests? Is it not enough?
