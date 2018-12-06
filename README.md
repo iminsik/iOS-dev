@@ -57,4 +57,6 @@
 - Storyboard is a kinda project file
 - "IB" stands for "Interface Builder'. Therefore, variables with IBOutlet resolves 'nil', and with IBAction 'Void' respectively. but it let "Interface Builder" link UI elements to variables with the decorators.
 - 'protocol' and 'delegate' decorators are similar
-- VIPER pattern (View, Interactor, Presenter, Entity, and Routing): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- VIPER pattern (View, Interactor, Presenter, Entity, and Routing)
+  * https://www.objc.io/issues/13-architecture/viper/
+  * https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
