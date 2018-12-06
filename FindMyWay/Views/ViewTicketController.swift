@@ -29,6 +29,7 @@ class ViewTicketController: UIViewController {
         //let textPNR = UserDefaults.standard.string(forKey: "PNR")!
         
         let flightAwareSvc = FlightAwareService(self.username, self.password);
+        
         flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow("KSEA", "KLAX", 30)
             .then(ParseAndShowFlights)
             .catch(ShowError)
@@ -57,11 +58,8 @@ class ViewTicketController: UIViewController {
     
     fileprivate func ParseAndShowFlights(json: Any, response: PMKAlamofireDataResponse) -> Promise<Void>
     {
-        var root : AirlineFlightSchedulesResultRoot?
-        
-        self.TextViewPNR.text = JSON(json).rawString()!
-        self.ConvertJsonToAirlineFlightSchedule(&root, response)
-        let sortedFlights = self.sortFlightsByDepartureTimeInc(root)
+        let root : AirlineFlightSchedulesResultRoot? = self.ConvertJsonToAirlineFlightSchedule(response)
+        let sortedFlights = self.sortFlightsByDepartureTimeInc(root!.airlineFlightSchedulesResult!.flights)
         self.printToView(sortedFlights)
         
         let randIdx = Int.random(in: 0 ..< sortedFlights.count)
@@ -73,15 +71,15 @@ class ViewTicketController: UIViewController {
         return Promise()
     }
 
-    fileprivate func ConvertJsonToAirlineFlightSchedule(_ root: inout AirlineFlightSchedulesResultRoot?, _ response: PMKAlamofireDataResponse) {
+    fileprivate func ConvertJsonToAirlineFlightSchedule(_ response: PMKAlamofireDataResponse) -> AirlineFlightSchedulesResultRoot? {
         do {
             let decoder = JSONDecoder()
-            root = try decoder.decode(AirlineFlightSchedulesResultRoot.self, from: response.data!)
+            return try decoder.decode(AirlineFlightSchedulesResultRoot.self, from: response.data!)
             //print(root!.airlineFlightSchedulesResult!.flights[0])
-            self.TextViewPNR.text = ""
         } catch let err {
             print("Err", err)
         }
+        return nil
     }
     
     fileprivate func ConvertJsonToFlightStatusInfo(_ response: PMKAlamofireDataResponse) -> FlightInfo? {
@@ -96,8 +94,8 @@ class ViewTicketController: UIViewController {
         return nil
     }
     
-    fileprivate func sortFlightsByDepartureTimeInc(_ root: AirlineFlightSchedulesResultRoot?) -> [Flight] {
-        return root!.airlineFlightSchedulesResult!.flights.sorted(by: { $0.departureTime! < $1.departureTime! })
+    fileprivate func sortFlightsByDepartureTimeInc(_ flights: [Flight] ) -> [Flight] {
+        return flights.sorted(by: { $0.departureTime! < $1.departureTime! })
     }
 
     fileprivate func printToView(_ sortedFlights: [Flight]) {
