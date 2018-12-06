@@ -5,7 +5,7 @@
 - [ ] UI Unit tests? Is it not enough?
 
 - [x] Asynchronous jobs:
-  Swift PromiseKit https://learnappmaking.com/promises-swift-how-to/
+  - Swift PromiseKit https://learnappmaking.com/promises-swift-how-to/
 
 - [ ] An easy way to inspect values of variables in debugging, not printing
 
