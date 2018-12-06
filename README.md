@@ -26,6 +26,7 @@
   ```
 
 ## Check points
+- [x] Understand the view controller life cycle and its callbacks and more https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/WorkWithViewControllers.html
 - [x] CocoaPods: brew install cocoapods
 - [ ] UI Unit tests? Is it not enough?
 - [x] Asynchronous jobs:
