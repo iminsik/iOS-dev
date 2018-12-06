@@ -47,4 +47,5 @@
 - AlamoFire and SwiftJSON: https://www.codementor.io/ashishkakkad/how-to-use-alamofire-and-swiftyjson-with-swift-4or6su5oa
 - Codable, JSON decoder: https://medium.com/xcblog/painless-json-parsing-with-swift-codable-2c0beaeb21c1
 - Handy and quick Core Data Wrapper https://realm.io/docs/swift/latest/
+- View Controller is different View, which doesn't occupy a whole space, for example, "Table View Controller" vs "Table View"
 
