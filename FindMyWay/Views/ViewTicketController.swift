@@ -16,8 +16,8 @@ import PromiseKit
 class ViewTicketController: UIViewController {
     @IBOutlet weak var TextViewPNR: UITextView!
     // Q: How can we secure username and password?
-    let username: String = "kimate"
-    let password: String = "6ea9e24e929403785d2f2bd99684a76fda3aed14"
+    let username: String = ""
+    let password: String = ""
     static var scheduler : Timer?
 
     fileprivate func ShowError(err: Error) -> Void {
