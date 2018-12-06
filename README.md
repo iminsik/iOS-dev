@@ -41,3 +41,10 @@
 - [ ] An easy way to inspect values of variables in debugging, not printing
 - [x] An easy way to format String, such as String interpolation
 - [x] Continuous Integration: https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/xcode?view=vsts
+
+## Instructor's notes (Kimate)
+- Completion Handler: https://blog.bobthedeveloper.io/completion-handlers-in-swift-with-bob-6a2a1a854dc4
+- AlamoFire and SwiftJSON: https://www.codementor.io/ashishkakkad/how-to-use-alamofire-and-swiftyjson-with-swift-4or6su5oa
+- Codable, JSON decoder: https://medium.com/xcblog/painless-json-parsing-with-swift-codable-2c0beaeb21c1
+- Handy and quick Core Data Wrapper https://realm.io/docs/swift/latest/
+
