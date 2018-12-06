@@ -2,6 +2,15 @@
 
 ## What's next?
 - [ ] Replace PromiseKit with AsyncTask in a feature branch
+  ```swift
+    func testIsValidTicketNumber_WhenNotValid_ReturnsFalse() {
+        let ticketNumbers = ["ZXVCDZZ", "Z1c2fg", "11111", ";BBBBB"]
+        for ticketNumber in ticketNumbers {
+            let actual = FindTicketController.IsValidTicketNumber(ticketNumber)
+            XCTAssert(actual == false, String(format: ticketNumber + " should not be valid."))
+        }
+    }
+  ```
 
 ## Check points
 - [x] CocoaPods: brew install cocoapods
