@@ -26,7 +26,8 @@
   ```
 
 ## Check points
-- [x] We can have multiple story boards per device
+- [ ] We should be familiar with storyboard.
+- [x] We can have multiple storyboards for a same controller per device
 - [ ] What is DEV, TEST and QA in Mobile App development: manual deployment
 - [ ] How to create a custom module, e.g, CustomTableView, and associate the Storyboard item with the custom module.
 - [ ] Can we layout with percentage?
