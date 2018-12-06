@@ -41,7 +41,7 @@ class FindMyWayTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         for uppercasedChar in "123&*)_@#%" {
             let actual = FindTicketController.IsUppercasedAlphabet(uppercasedChar)
-            XCTAssert(actual == false, String(format: String(uppercasedChar) + " is not  an alphabet."))
+            XCTAssert(actual == false, String(format: String(uppercasedChar) + " is not an alphabet."))
         }
     }
     
@@ -52,7 +52,7 @@ class FindMyWayTests: XCTestCase {
     }
     
     func testIsValidTicketNumber_WhenNotValid_ReturnsFalse() {
-        let ticketNumbers = ["ZXVCDZZ", "Z1c2fg", "11111"]
+        let ticketNumbers = ["ZXVCDZZ", "Z1c2fg", "11111", ";BBBBB"]
         for ticketNumber in ticketNumbers {
             let actual = FindTicketController.IsValidTicketNumber(ticketNumber)
             XCTAssert(actual == false, String(format: ticketNumber + " should not be valid."))

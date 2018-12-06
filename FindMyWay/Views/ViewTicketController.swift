@@ -16,8 +16,8 @@ import PromiseKit
 class ViewTicketController: UIViewController {
     @IBOutlet weak var TextViewPNR: UITextView!
     // Q: How can we secure username and password?
-    let username: String = ""
-    let password: String = ""
+    let username: String = "kimate"
+    let password: String = "6ea9e24e929403785d2f2bd99684a76fda3aed14"
     static var scheduler : Timer?
 
     fileprivate func ShowError(err: Error) -> Void {
@@ -47,11 +47,11 @@ class ViewTicketController: UIViewController {
     fileprivate func PrintFlightInfoStatus(json: Any, response: PMKAlamofireDataResponse) -> Promise<Void>
     {
         let flightInfo : FlightInfo? = ConvertJsonToFlightStatusInfo(response)
-        FlightInfoEntityRepository.Read()
+        print(FlightInfoEntityRepository.Read())
         if (FlightInfoEntityRepository.Update(flightInfo!) == false) {
             FlightInfoEntityRepository.Create(flightInfo!)
         }
-        FlightInfoEntityRepository.Read()
+        self.TextViewPNR.text = FlightInfoEntityRepository.Read()
 
         return Promise()
     }
@@ -60,10 +60,8 @@ class ViewTicketController: UIViewController {
     {
         let root : AirlineFlightSchedulesResultRoot? = self.ConvertJsonToAirlineFlightSchedule(response)
         let sortedFlights = self.sortFlightsByDepartureTimeInc(root!.airlineFlightSchedulesResult!.flights)
-        self.printToView(sortedFlights)
         
         let randIdx = Int.random(in: 0 ..< sortedFlights.count)
-        
         FlightAwareService(self.username, self.password).GetFlightInfoStatus(ident: sortedFlights[randIdx].ident!)
             .then(PrintFlightInfoStatus)
             .catch(ShowError)

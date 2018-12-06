@@ -58,15 +58,18 @@ class FindTicketController: UIViewController {
         }
     }
     
-    static func IsValidTicketNumber(_ ticketNumber: String?) -> Bool {
-        var isValidTicketNumber = false
-        if ticketNumber?.count == 6 {
-            for character in ticketNumber! {
-                isValidTicketNumber = IsUppercasedAlphabet(character)
+    static func AreAllAlphabets(_ ticketNumber: String) -> Bool {
+        for index in ticketNumber.characters.indices {
+            if IsUppercasedAlphabet(ticketNumber[index]) == false {
+                return false
             }
         }
-        
-        return isValidTicketNumber
+        return true
+    }
+    
+    static func IsValidTicketNumber(_ ticketNumber: String?) -> Bool {
+        let ticketNumber = ticketNumber ?? ""
+        return ticketNumber.count == 6 && AreAllAlphabets(ticketNumber)
     }
 }
 
