@@ -65,7 +65,7 @@ class FindTicketController: UIViewController {
     }
     
     static func AreAllAlphabets(_ ticketNumber: String) -> Bool {
-        for index in ticketNumber.characters.indices {
+        for index in ticketNumber.indices {
             if IsUppercasedAlphabet(ticketNumber[index]) == false {
                 return false
             }
