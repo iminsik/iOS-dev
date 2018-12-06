@@ -26,6 +26,12 @@
   ```
 
 ## Check points
+- [ ] We should be familiar with storyboard.
+- [x] We can have multiple storyboards for a same controller per device
+- [ ] What is DEV, TEST and QA in Mobile App development: manual deployment
+- [ ] How to create a custom module, e.g, CustomTableView, and associate the Storyboard item with the custom module.
+- [ ] Can we layout with percentage?
+- [ ] Understand the view controller life cycle and its callbacks and more https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/WorkWithViewControllers.html
 - [x] CocoaPods: brew install cocoapods
 - [ ] UI Unit tests? Is it not enough?
 - [x] Asynchronous jobs:
@@ -47,4 +53,10 @@
 - AlamoFire and SwiftJSON: https://www.codementor.io/ashishkakkad/how-to-use-alamofire-and-swiftyjson-with-swift-4or6su5oa
 - Codable, JSON decoder: https://medium.com/xcblog/painless-json-parsing-with-swift-codable-2c0beaeb21c1
 - Handy and quick Core Data Wrapper https://realm.io/docs/swift/latest/
-
+- View Controller is different View, which doesn't occupy a whole space, for example, "Table View Controller" vs "Table View"
+- Storyboard is a kinda project file
+- "IB" stands for "Interface Builder'. Therefore, variables with IBOutlet resolves 'nil', and with IBAction 'Void' respectively. but it let "Interface Builder" link UI elements to variables with the decorators.
+- 'protocol' and 'delegate' decorators are similar
+- VIPER pattern (View, Interactor, Presenter, Entity, and Routing)
+  * https://www.objc.io/issues/13-architecture/viper/
+  * https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
