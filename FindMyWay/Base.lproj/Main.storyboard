@@ -65,12 +65,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="26.600985221674879"/>
+            <point key="canvasLocation" x="82" y="27"/>
         </scene>
-        <!--View Ticket Controller-->
+        <!--Details-->
         <scene sceneID="yXi-29-iZb">
             <objects>
-                <viewController id="jZR-mo-UnG" customClass="ViewTicketController" customModule="FindMyWay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewTicket" title="Details" id="jZR-mo-UnG" customClass="ViewTicketController" customModule="FindMyWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dpw-66-SSb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

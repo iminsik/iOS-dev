@@ -80,7 +80,24 @@ class FlightInfoEntityRepository {
         message += "---------- END: READ ----------\n"
         return message
     }
-    
+
+    static func ReadInfo() -> Int {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return 0
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let flightInfoEntity = NSFetchRequest<FlightInfoEntity>(entityName: "FlightInfoEntity")
+        
+        do {
+            let fetchedFlightInfoEntity = try managedContext.fetch(flightInfoEntity as! NSFetchRequest<NSFetchRequestResult>) as! [FlightInfoEntity]
+            
+            return fetchedFlightInfoEntity.count
+        } catch {
+            fatalError("Failed to fetch employees: \(error)")
+        }
+        return 0
+    }
+
     static func Create(_ flightInfo: FlightInfo) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return

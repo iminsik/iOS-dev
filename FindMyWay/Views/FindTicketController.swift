@@ -26,6 +26,12 @@ class FindTicketController: UIViewController {
         } else {
             submitButton.isEnabled = true
         }
+        
+        if FlightInfoEntityRepository.ReadInfo() > 0 {
+            let detailsViewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewTicket") as UIViewController
+            let navigationController = UINavigationController(rootViewController: detailsViewController)
+            self.present(navigationController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func SubmitTicket(_ sender: Any) {
