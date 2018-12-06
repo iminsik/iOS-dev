@@ -38,9 +38,9 @@
   - Functional Reactive Programming
     * ReactiveCocoa https://github.com/ReactiveCocoa/ReactiveCocoa
     * RxSwift https://github.com/ReactiveX/RxSwift 
-- [ ] An easy way to inspect values of variables in debugging, not printing
+- [ ] An easy way to inspect values of variables in debugging in XCode, not printing
 - [x] An easy way to format String, such as String interpolation
-- [x] Continuous Integration: https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/xcode?view=vsts
+- [ ] Continuous Integration: https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/xcode?view=vsts
 
 ## Instructor's notes (Kimate)
 - Completion Handler: https://blog.bobthedeveloper.io/completion-handlers-in-swift-with-bob-6a2a1a854dc4
