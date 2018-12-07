@@ -26,6 +26,8 @@
   ```
 
 ## Check points
+- [ ] Local Push notification center
+- [ ] Google FireBase Analytics
 - [ ] We should be familiar with storyboard.
 - [x] We can have multiple storyboards for a same controller per device
 - [ ] What is DEV, TEST and QA in Mobile App development: manual deployment
