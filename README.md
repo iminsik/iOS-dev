@@ -62,5 +62,4 @@
 - VIPER pattern (View, Interactor, Presenter, Entity, and Routing)
   * https://www.objc.io/issues/13-architecture/viper/
   * https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- GEO fencing and Wifi Beacon
-
+- GEO fencing and Wifi Beacon https://proximi.io/geofence-complete-guide-geofencing/
