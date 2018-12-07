@@ -12,6 +12,12 @@ import Foundation
 import UIKit
 import SwiftyJSON
 import PromiseKit
+// Swift
+import UserNotifications
+
+extension Notification.Name {
+    static let peru = Notification.Name("peru")
+}
 
 class ViewTicketController: UIViewController {
     @IBOutlet weak var TextViewPNR: UITextView!
@@ -19,6 +25,12 @@ class ViewTicketController: UIViewController {
     let username: String = ""
     let password: String = ""
     static var scheduler : Timer?
+    // Swift
+    let center = UNUserNotificationCenter.current()
+    let options: UNAuthorizationOptions = [.alert, .sound];
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10,
+                                                    repeats: false)
+
 
     fileprivate func ShowError(err: Error) -> Void {
         self.TextViewPNR.text = err.localizedDescription
@@ -33,17 +45,67 @@ class ViewTicketController: UIViewController {
         flightAwareSvc.GetAirlineFlightSchedulesUntilTomorrow("KSEA", "KLAX", 30)
             .then(ParseAndShowFlights)
             .catch(ShowError)
+        
+        NotificationCenter.default.post(name: .peru, object: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.AddRandomFlightToEntity()
         
-        if ViewTicketController.scheduler == nil {
-            ViewTicketController.scheduler = Timer.scheduledTimer(timeInterval: 20.0, target: self, selector: #selector(self.AddRandomFlightToEntity), userInfo: nil, repeats: true)
+        center.requestAuthorization(options: options) {
+            (granted, error) in
+            if !granted {
+                print("Something went wrong")
+            }
         }
+        center.getNotificationSettings { (settings) in
+            if settings.authorizationStatus != .authorized {
+                // Notifications not allowed
+            }
+        }
+
+        NotificationCenter.default.addObserver(self, selector: #selector(self.onDidReceiveData(notification:)), name: .peru, object: nil)
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Don't forget"
+        content.body = "Buy some milk"
+        content.sound = UNNotificationSound.default
+        
+        // Swift
+        let identifier = "UYLLocalNotification"
+        let request = UNNotificationRequest(identifier: identifier,
+                                            content: content, trigger: trigger)
+        center.add(request, withCompletionHandler: { (error) in
+            if error != nil {
+                // Something went wrong
+            }
+        })
+
+        //        if ViewTicketController.scheduler == nil {
+        //            ViewTicketController.scheduler = Timer.scheduledTimer(timeInterval: 20.0, target: self, selector: #selector(self.AddRandomFlightToEntity), userInfo: nil, repeats: true)
+        //        }
+        
     }
 
+    @objc func onDidReceiveData(notification:Notification) {
+        print("I got message from Peru!")
+        let content = UNMutableNotificationContent()
+        content.title = "Don't forget"
+        content.body = "Buy some milk"
+        content.sound = UNNotificationSound.default
+        
+        // Swift
+        let identifier = "UYLLocalNotification"
+        let request = UNNotificationRequest(identifier: identifier,
+                                            content: content, trigger: trigger)
+        center.add(request, withCompletionHandler: { (error) in
+            if error != nil {
+                // Something went wrong
+            }
+        })
+    }
+    
     fileprivate func PrintFlightInfoStatus(json: Any, response: PMKAlamofireDataResponse) -> Promise<Void>
     {
         let flightInfo : FlightInfo? = ConvertJsonToFlightStatusInfo(response)
