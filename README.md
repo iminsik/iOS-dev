@@ -1,5 +1,43 @@
 # iOS app development
 
+```swift
+    func sendUserNotificationOnce(identifier: String) {
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.requestAuthorization(options: [.alert, .sound])
+        { (granted, error) in
+            // Enable or disable features based on authorization.
+        }
+        
+        // customize your notification content
+        let content = UNMutableNotificationContent()
+        content.title = "iBeacon2"
+        content.body = "Isn't Geoffrey cute?"
+        content.sound = UNNotificationSound.default
+        
+        // when the notification will be triggered
+        let timeInSeconds: TimeInterval = 5
+        // the actual trigger object
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: timeInSeconds,
+            repeats: false
+        )
+        
+        // the notification request object
+        let request = UNNotificationRequest(
+            identifier: identifier,
+            content: content,
+            trigger: trigger
+        )
+        
+        // trying to add the notification request to notification center
+        notificationCenter.add(request, withCompletionHandler: { (error) in
+            if error != nil {
+                print("Error adding notification with identifier: \(identifier)")
+            }
+        })
+    }
+```
+
 ## What's next?
 - [ ] Replace PromiseKit with AsyncTask in a feature branch
   ```swift
